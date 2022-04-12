@@ -1,0 +1,162 @@
+.header {
+    position: relative;
+    top: 0%;
+}
+
+.welcome {
+  color: #ec5242;
+  text-align: center;
+}
+
+
+.background {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 28px;
+    text-align: center;
+    color: #ec5242;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: rgb(95, 95, 95);
+  }
+
+main {
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  justify-content: center;
+  gap: 10px;
+}
+
+.main-title {
+      font-family: 'Montserrat', sans-serif;
+      letter-spacing: 2px;
+  }
+
+.mobile {
+    background-image: url("../img/main-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.text-1 {
+  background-color: white;
+  border: none;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+.address {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  max-width: 280px;
+  margin: auto;
+  font-size: 14px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.logo-title {
+  color: #272a31;
+  text-align: center;
+  font-size: 20px;
+  max-width: 300px;
+  margin: auto;
+}
+
+.logo-line {
+  border: 0;
+  background-color: rgb(239, 81, 60);
+  height: 5px;
+  text-align: center;
+  width: 20%;
+  margin: auto;
+  opacity: 1;
+}
+
+.logo-text {
+  text-align: center;
+  font-size: 15px;
+}
+
+.logo-card {
+  text-align: center;
+  margin: auto;
+  width: 100%;
+}
+
+.logo-card img {
+  min-width: 200px;
+  width: 100%;
+  max-width: 375px;
+}
+
+.last-years {
+  border-top: 3px solid #bebebe;
+  padding-top: 50px;
+}
+
+.cities {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.cities img {
+  min-width: 200px;
+  width: 100%;
+  max-width: 768px;
+}
+
+.partners {
+    background-color: rgba(42, 44, 48, 0.9);
+    padding: 15px 0 20px 0;
+}
+  
+.partners-title {
+    color: #888686;
+    text-align: center;
+ }
+  
+.partner-list {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+}
+  
+.logos {
+    max-width: 80px;
+    filter: grayscale(100%);
+}
+  
+footer {
+    display: flex;
+    padding: 25px;
+}
+  
+.creative {
+    max-width: 200px;
+    max-height: 100px;
+}
+  
+ul {
+    list-style: none;
+}
+  
+ul li {
+    font-size: 10px;
+ }
