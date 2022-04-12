@@ -9,7 +9,7 @@
 
 
 .background {
-    background-image: url(/img/title-back.html);
+    background-image: url("../img/title-back.html");
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -30,7 +30,7 @@
   }
 
 .mobile {
-    background-image: url(/img/main-background.png);
+    background-image: url("../img/main-background.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -55,7 +55,7 @@
 
 .program {
   background-color: #272a31;
-  background-image: url("/img/pattern_bg.png");
+  background-image: url("../img/pattern_bg.png");
   background-repeat: repeat;
   background-size: 75px;
   height: 100vh;
