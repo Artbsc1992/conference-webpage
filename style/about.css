@@ -1,6 +1,10 @@
 .header {
-    position: relative;
-    top: 0%;
+  position: relative;
+  top: 0%;
+}
+
+.full-nav {
+    display: none;
 }
 
 .welcome {
@@ -8,22 +12,22 @@
   text-align: center;
 }
 
-
 .background {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
-    font-size: 28px;
-    text-align: center;
-    color: #ec5242;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 28px;
+  text-align: center;
+  color: #ec5242;
+  margin: auto;
 }
 
 .bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    background-color: rgb(95, 95, 95);
-  }
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: rgb(95, 95, 95);
+}
 
 main {
   display: flex;
@@ -34,27 +38,31 @@ main {
 }
 
 .main-title {
-      font-family: 'Montserrat', sans-serif;
-      letter-spacing: 2px;
-  }
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 2px;
+}
 
 .mobile {
-    background-image: url("../img/main-background.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
+  background-image: url("../img/main-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
 
 .text-1 {
   background-color: white;
   border: none;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 700;
   text-align: center;
 }
 
+.text-2 {
+    display: none;
+}
+
 .address {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 700;
   text-align: center;
   max-width: 280px;
@@ -86,6 +94,7 @@ main {
   width: 20%;
   margin: auto;
   opacity: 1;
+  max-width: 100px;
 }
 
 .logo-text {
@@ -122,41 +131,187 @@ main {
 }
 
 .partners {
-    background-color: rgba(42, 44, 48, 0.9);
-    padding: 15px 0 20px 0;
+  background-color: rgba(42, 44, 48, 0.9);
+  padding: 15px 0 20px 0;
 }
-  
+
 .partners-title {
-    color: #888686;
-    text-align: center;
- }
-  
+  color: #888686;
+  text-align: center;
+}
+
 .partner-list {
-    display: flex;
-    justify-content: space-around;
-    width: 80%;
-    margin: auto;
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: auto;
 }
-  
+
 .logos {
-    max-width: 80px;
-    filter: grayscale(100%);
+  max-width: 80px;
+  filter: grayscale(100%);
 }
-  
+
 footer {
+  display: flex;
+  padding: 25px;
+}
+
+.creative {
+  max-width: 200px;
+  max-height: 100px;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  font-size: 10px;
+}
+
+@media screen and (min-width: 768px){
+    
+  .hamburger {
+    display: none;
+  }
+
+  .full-nav {
+      display: inline;
+      
+  }
+
+  .full-screen-nav {
+      display: flex;
+      justify-content: space-around;
+      background-color: #fff;
+      align-items: center;
+  }
+  .links {
+    width: 500px;
+  }
+
+  .links ul {
+      display: flex;
+      justify-content: space-between;
+      padding: 0;
+      margin: 0;
+  }
+
+  a {
+      text-decoration: none;
+  }
+
+  .nav-links a {
+      color: #272a31;
+      font-family: "Lato", sans-serif;
+      font-weight: 800;
+      font-size: 14px;
+  }
+
+  .welcome {
+    color: #ec5242;
+    font-size: 20px;
+  }
+
+  .background {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 48px;
+    text-align: center;
+    color: #ec5242;
+    max-width: 1200px;
+  }
+  .text-1 {
+      display: none;
+  }
+
+  .text-2 {
+    display: block;
+    background-color: white;
+    border: none;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    padding: 10px;
+    font-size: 12px;
+    line-height: 25px;
+    width: 80%;
+  }
+
+  .media-text {
+     display: inline;
+  }
+
+  .address {
+    max-width: 550px;
+    font-size: 14px;
+  }
+
+  .logo {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 25px;
+    margin-bottom: 40px;
+  }
+
+  .logo-title {
+    color: #272a31;
+    text-align: center;
+    font-size: 25px;
+    max-width: 600px;
+    margin: auto;
+  }
+
+  
+  .logo-text {
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .logo-card {
+    min-width: 400px;
+    max-width: 500px;
+  }
+
+  .logo-card img {
+    max-width: 500px;
+  }
+
+  .cities {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .cities img {
+    min-width: 200px;
+    width: 100%;
+    max-width: 768px;
+  }
+
+  .partners {
+    display: none;
+  }
+
+  footer {
     display: flex;
     padding: 25px;
-}
-  
-.creative {
-    max-width: 200px;
-    max-height: 100px;
-}
-  
-ul {
+    background-color: #272a31;
+  }
+
+  .creative {
+    max-width: 400px;
+    filter: brightness(0) invert(1);
+  }
+
+  ul {
     list-style: none;
+  }
+
+  ul li {
+    font-size: 18px;
+    color: #fff;
+  }
 }
-  
-ul li {
-    font-size: 10px;
- }
