@@ -13,6 +13,7 @@
 
 .background {
   background-image: url("../img/red-background.jpeg");
+  background-clip: inherit;
   -webkit-background-clip: text;
   color: transparent;
   font-weight: 900;
