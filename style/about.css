@@ -223,7 +223,14 @@ main {
 
 footer {
   display: flex;
+  height: 100px;
+  max-height: 300px;
+  align-items: center;
   padding: 25px;
+}
+
+.footer-extra-text {
+  display: none;
 }
 
 .creative {
@@ -236,7 +243,7 @@ ul {
 }
 
 ul li {
-  font-size: 15px;
+  font-size: 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -270,10 +277,11 @@ ul li {
 
   ul {
     list-style: none;
+    max-width: 600px;
   }
 
   ul li {
-    font-size: 18px;
+    font-size: 12px;
     color: #fff;
   }
 
@@ -293,6 +301,16 @@ ul li {
     font-family: "Lato", sans-serif;
     font-weight: 800;
     font-size: 14px;
+  }
+
+  .nav-links a:hover {
+    color: #ec5242;
+    transition: 0.3s;
+  }
+
+  .nav-links a:focus {
+    outline: 2px solid #ec5242;
+    border-radius: 2px;
   }
 
   .welcome {
@@ -334,7 +352,7 @@ ul li {
     max-width: 800px;
     margin: auto;
     padding: 10px;
-    font-size: 12px;
+    font-size: 15px;
     line-height: 25px;
     width: 80%;
   }
@@ -404,6 +422,11 @@ ul li {
     background-color: #272a31;
     height: 150px;
     padding-left: 200px;
+  }
+
+  .footer-extra-text {
+    display: inline;
+    font-size: 12px;
   }
 
   .creative {

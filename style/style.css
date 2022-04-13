@@ -1,6 +1,7 @@
 .header {
   position: relative;
   top: 0%;
+  background-image: url(/img/main-background.png);
 }
 
 .full-nav {
@@ -233,7 +234,7 @@ main {
   max-width: 125px;
   margin-right: 20px;
   margin-bottom: 20px;
-  background-image: url("/img/chess.png");
+  background-image: url("../img/chess.png");
   background-position: left;
   background-repeat: no-repeat;
   background-size: 50px;
@@ -304,22 +305,28 @@ main {
 footer {
   display: flex;
   padding: 25px;
-  height: 170px;
+  height: 100px;
   align-items: center;
+  max-height: 300px;
+}
+
+.footer-extra-text {
+  display: none;
 }
 
 .creative {
   width: 150px;
   max-width: 250px;
-  max-height: 50px;
+  max-height: 80px;
 }
 
 ul {
   list-style: none;
+  max-width: 600px;
 }
 
 ul li {
-  font-size: 15px;
+  font-size: 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -517,7 +524,12 @@ ul li {
     display: flex;
     padding: 25px;
     height: 150px;
-    padding-left: 200px;
+    padding-left: 150px;
+  }
+
+  .footer-extra-text {
+    display: inline;
+    font-size: 12px;
   }
 
   .creative {
@@ -527,6 +539,6 @@ ul li {
   }
 
   ul li {
-    font-size: 18px;
+    font-size: 12px;
   }
 }
