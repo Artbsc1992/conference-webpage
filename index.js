@@ -48,7 +48,7 @@ const speakers = [
 
 for (let i = 0; i < speakers.length; i += 1) {
   const divSpeakers = document.createElement('div');
-  divSpeakers.classList.add('speakers-container', `speaker${i+1}`);
+  divSpeakers.classList.add('speakers-container', `speaker${i + 1}`);
 
   const img = document.createElement('img');
   img.src = speakers[i].Photo;
