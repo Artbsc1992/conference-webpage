@@ -13,8 +13,15 @@
   <body>
     <div class="container-fluid mobile p-0 pb-5">
       <header class="header">
-        <nav class="full-nav">
-          <div class="container-fluid full-screen-nav">
+        <nav>
+          <div class="container-fluid">
+            <button class="hamburger" type="button">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+          </button>
+          </div>
+          <div class="container-fluid full-screen-nav full-nav">
             <a class="navbar-brand" href="./index.html">
               <img src="./img/logo-nav.png" alt=""  class="d-inline-block align-text-top">
             </a>
@@ -36,21 +43,6 @@
             </div>
           </div>
         </nav>
-        <nav class="navbar navbar-dark bg-transparent hamburger">
-            <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-              </button>
-            </div>
-          </nav>
-        <div class="collapse" id="navbarToggleExternalContent">
-            <div class="bg-dark p-4">
-              <h5 class="text-white h4">Collapsed content</h5>
-              <span class="text-muted">Toggleable via the navbar brand.</span>
-            </div>
-          </div>
       </header>
       <main class="container">
           <div class="container div-title">
@@ -73,33 +65,33 @@
         <hr class="main-border">
       </div>
       <div class="container-fluid features">
-        <div class="lecture flex-1">
+        <div class="lecture flex-1" tabindex="0">
           <img src="./img/lecture_icon.png" alt="lecture">
           <h3>Lecture</h3>
           <p>Listen to the speakers from various 
             countries about the messeges of sharing and opening</p>
         </div>
-        <div class="exhibition flex-1">
+        <div class="exhibition flex-1" tabindex="0">
           <img src="./img/exhibition_icon.png" alt="lecture">
           <h3>CC Exhibition</h3>
           <p>Appreciate various creations applying CC license of artists,
             organized form Art Center Nabi.
           </p>
         </div>
-        <div class="forum flex-1">
+        <div class="forum flex-1" tabindex="0">
           <img src="./img/forum_icon.png" alt="lecture">
           <h3>Forum</h3>
           <p>Have the time to share your
              thoghts and opinions with experts for each topic.</p>
         </div>
-        <div class="workshop flex-1">
+        <div class="workshop flex-1" tabindex="0">
           <img src="./img/workshop_icon.png" alt="lecture">
           <h3>workshop</h3>
           <p>Try creating your own work using open source license rather than
             just watching
           </p>
         </div>
-        <div class="ignite flex-1">
+        <div class="ignite flex-1" tabindex="0">
           <img src="./img/ignite_icon.png" alt="lecture">
           <h3>CC Ignite</h3>
           <p>Get opportunities to network with CC affiliates around the world,
@@ -141,6 +133,6 @@
       </ul>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="./index.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
