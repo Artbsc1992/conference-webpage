@@ -120,6 +120,10 @@ main {
   font-weight: 700;
 }
 
+.hole-program {
+  display: none;
+}
+
 #btn {
   background-color: #ec5242;
   border: 0;
