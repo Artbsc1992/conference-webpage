@@ -303,8 +303,8 @@ main {
 footer {
   display: flex;
   padding: 25px;
-  max-width:  500px;
   height: 170px;
+  align-items: center;
 }
 
 .creative {
@@ -318,7 +318,7 @@ ul {
 }
 
 ul li {
-  font-size: 10px;
+  font-size: 15px;
 }
 
 @media screen and (min-width: 768px) {
@@ -512,6 +512,8 @@ ul li {
   footer {
     display: flex;
     padding: 25px;
+    height: 150px;
+    padding-left: 200px;
   }
 
   .creative {

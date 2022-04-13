@@ -225,8 +225,8 @@ footer {
 }
 
 .creative {
-  max-width: 200px;
-  max-height: 100px;
+  width: 100px;
+  height: 75px;
 }
 
 ul {
@@ -234,7 +234,7 @@ ul {
 }
 
 ul li {
-  font-size: 10px;
+  font-size: 15px;
 }
 
 @media screen and (min-width: 768px){
@@ -392,6 +392,7 @@ ul li {
     padding: 25px;
     background-color: #272a31;
     height: 150px;
+    padding-left: 200px;
   }
 
   .creative {
