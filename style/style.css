@@ -19,66 +19,65 @@
   font-weight: 900;
   font-family: "Montserrat", sans-serif;
 }
+@media screen and (max-width: 768px) {
+  .hamburger {
+    border: none;
+  }
 
-.hamburger {
-  border: none;
+  nav.active {
+    height: 100vh;
+    width: 100vh;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: absolute;
+    background-color: #535353;
+  }
+
+  .hamburger.active > * {
+    display: none;
+  }
+
+  .hamburger.active {
+    background-image: url("/img/x-menu.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-self: flex-end;
+    width: 20px;
+    height: 20px;
+    margin: 15px;
+    background-color: #535353;
+  }
+
+  nav.active .full-nav .navbar-brand {
+    display: none;
+  }
+
+  nav.active .full-nav .links {
+    height: 600px;
+  }
+
+  nav.active .full-nav .links ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 80%;
+    padding: 0;
+    margin: auto;
+    align-items: center;
+  }
+
+  nav.active .full-nav .links ul .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+  }
+
+  nav.active .full-nav {
+    display: block;
+  }
 }
-
-nav.active {
-  height: 100vh;
-  width: 100vh;
-  max-width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  position: absolute;
-  background-color: #535353;
-}
-
-.hamburger.active > * {
-  display: none;
-}
-
-.hamburger.active {
-  background-image: url("/img/x-menu.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  align-self: flex-end;
-  width: 20px;
-  height: 20px;
-  margin: 15px;
-  background-color: #535353;
-}
-
-nav.active .full-nav .navbar-brand {
-  display: none;
-
-}
-
-nav.active .full-nav .links {
- height: 600px;
-}
-
-nav.active .full-nav .links ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 80%;
-  padding: 0;
-  margin: auto;
-  align-items: center;
-}
-
-nav.active .full-nav .links ul .nav-links a {
-  text-decoration: none;
-  color: white;
-  font-size: 30px;
-}
-
-nav.active .full-nav {
-  display: block;
-}
-
 
 .bar {
   display: block;
@@ -100,11 +99,11 @@ main {
   letter-spacing: 2px;
 }
 
-.mobile {
+.landing {
+  height: 100vh;
   background-image: url("../img/main-background.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
 }
 
 .text-1 {
@@ -228,10 +227,24 @@ main {
   width: 100%;
 }
 
-.speakers-container .speaker {
+.speakers-container .img-div {
   grid-area: speaker;
   max-width: 125px;
-  margin-right: 10px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-image: url('/img/chess.png');
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 50px;
+  background-position-y: top;
+}
+
+.speakers-container .img-div .speaker {
+  width: 100px;
+  height: 120px;
+  position: relative;
+  left: 10px;
+  top: 10px;
 }
 
 .speakers-container .name {
@@ -262,6 +275,7 @@ main {
   align-self: center;
   font-size: 9px;
   max-width: 485px;
+  margin-bottom: 10px;
 }
 
 .partners {
@@ -289,11 +303,14 @@ main {
 footer {
   display: flex;
   padding: 25px;
+  max-width:  500px;
+  height: 170px;
 }
 
 .creative {
-  max-width: 200px;
-  max-height: 100px;
+  width: 150px;
+  max-width: 250px;
+  max-height: 50px;
 }
 
 ul {
@@ -310,8 +327,13 @@ ul li {
   }
 
   .full-nav {
-    display: inline;
+    display: block;
     box-shadow: 5px 10px 18px #888888;
+  }
+
+  .nav-logo {
+    max-width: 200px;
+    max-height: 80px;
   }
 
   .full-screen-nav {
@@ -320,6 +342,7 @@ ul li {
     background-color: #fff;
     align-items: center;
   }
+
   .links {
     width: 500px;
   }
@@ -354,17 +377,17 @@ ul li {
 
   .welcome {
     color: #ec5242;
-    font-size: 50px;
+    font-size: 43px;
   }
 
   .background {
     background-image: url("../img/red-background.jpeg");
     font-family: "Montserrat", sans-serif;
     font-weight: 800;
-    font-size: 68px;
+    font-size: 55px;
     text-align: left;
     color: transparent;
-    max-width: 800px;
+    max-width: 750px;
   }
 
   .text-1 {
@@ -393,10 +416,15 @@ ul li {
     gap: 15px;
   }
 
+  .flex-1:hover {
+    outline: 2px solid #fff;
+    border-radius: 2px;
+  }
+
   #main-program {
     font-size: 30px;
   }
-  
+
   .flex-1 h3 {
     text-align: center;
     max-width: 100px;
@@ -410,7 +438,7 @@ ul li {
   .btn {
     display: none;
   }
-  
+
   .hole-program {
     display: flex;
     justify-content: center;
@@ -488,6 +516,9 @@ ul li {
 
   .creative {
     max-width: 400px;
+    max-width: 400px;
+    height: 100px;
+    max-height: 200px;
   }
 
   ul li {

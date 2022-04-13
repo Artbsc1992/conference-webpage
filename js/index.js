@@ -17,43 +17,43 @@ const speakerCard = document.querySelector('.grid1');
 
 const speakers = [
   {
-    Photo: './img/speaker_01.png',
-    name: 'Yochai Benckler',
+    Photo: './img/speaker_01.jpg',
+    name: 'Bjarne Stroustrup',
     studies:
-      'Berkam Professor of Enterpreneurial Legal Studies At Harvard law School',
+      'Distinguished Research Professor and holds the College of Engineering Chair in Computer Science at Texas A&M University',
     achievements:
-      'Benkler studies commons-based peer production, and published his seminal boos The Wealth of Networks in 2006.',
+      'most notable for the creation and development of the widely used C++ programming language.',
   },
   {
-    Photo: './img/speaker_02.png',
-    name: 'SohYeong Noh',
-    studies: 'Director of Art Center Nabi and a board member of CC Korea',
+    Photo: './img/speaker_02.jpg',
+    name: 'James Gosling',
+    studies: 'M.A. and PH.D. from Carnegie Mellon University in computer science',
     achievements:
-      'As the main venue for new media art production in Korea, Nabi promotes cross-disciplinary collaboration and understanding amoung science thechnology, humanities, and the arts.',
+      'Known as father of the Java programming lenguage. Due to his extra-ordinary achievements Gosling was elected to Foreign Associate member of the United States National Academy of Engineering. .',
   },
   {
-    Photo: './img/speaker_03.png',
-    name: 'Lila Tretikov',
-    studies: 'Executive Director of the Wikimedia Foundation',
+    Photo: './img/speaker_03.jpg',
+    name: 'Linus Torvalds',
+    studies: 'Principal force behind the development of the Linux kernel',
     achievements:
-      'lila Tretikov is the Executive Director of the Wikimedia Foundation, the nonprofit organization that operates Wikipedia. Wikipedia is freely avaliable in 290 languages and used by nearly half a billion people around the world every month.',
+      '2012 Millennium Technology Prize by the Technology Academy Finland in recognition of his creation of a new open source operating system for computers leading to the widely used Linux kernel.',
   },
   {
-    Photo: './img/speaker_04.png',
-    name: 'Kilnam Chon',
-    studies: 'PHD in computer science from University of California',
+    Photo: './img/speaker_04.jpg',
+    name: 'Anders Hejlsberg',
+    studies: 'He currently works for Microsoft as the lead architect of C# and core developer on TypeScript.',
     achievements:
-      'Kilnam Chon helped bring the Internet to Asia and is an outspoken advocate for the open web and digital commons. In the 2012, he was inducted into the inaugural class of the internet societys (ISOC) Internet Hall of fame.',
+      'He is creator of popular programming language C#. He was the original author of Turbo Pascal and the chief architect of Delphi.',
   },
   {
-    Photo: './img/speaker_05.png',
+    Photo: './img/speaker_05.jpg',
     name: 'Julia Leda',
     studies: 'President of young Pirates of Europe',
     achievements:
       'European ingetration, political democracy and participation of youth through online as her major condem, Redaś report outlining potential changes to EU copyright law was approved by the Parliament in July.',
   },
   {
-    Photo: './img/speaker_06.png',
+    Photo: './img/speaker_06.jpg',
     name: 'Ryan Merkley',
     studies: 'CEO of Creative Commons, ex COO of the Mozilla Foundation',
     achievements:
@@ -69,7 +69,10 @@ for (let i = 0; i < speakers.length; i += 1) {
   img.src = speakers[i].Photo;
   img.alt = 'Speaker photo';
   img.classList.add('speaker');
-  divSpeakers.appendChild(img);
+  const divImg = document.createElement('div');
+  divImg.classList.add('img-div');
+  divImg.appendChild(img); 
+  divSpeakers.appendChild(divImg);
 
   const name = document.createElement('h4');
   name.innerHTML = speakers[i].name;

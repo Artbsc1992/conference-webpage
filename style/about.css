@@ -169,12 +169,16 @@ main {
   text-align: center;
   margin: auto;
   width: 100%;
+  border: 2px solid #d4d3d3;
+  height: 150px;
+  max-width: 400px;
 }
 
 .logo-card img {
   min-width: 200px;
-  width: 100%;
+  width: 200px;
   max-width: 375px;
+  height: 150px;
 }
 
 .last-years {
@@ -237,6 +241,15 @@ ul li {
     
   .hamburger {
     display: none;
+  }
+
+  nav {
+    box-shadow: rgb(0 0 0 / 45%) 0px 25px 20px -20px;
+  }
+
+  .nav-logo {
+    max-width: 200px;
+    max-height: 80px;
   }
 
   .full-nav {
@@ -347,12 +360,17 @@ ul li {
   }
 
   .logo-card {
-    min-width: 400px;
-    max-width: 500px;
+    width: 700px;
+    border: 2px solid #d4d3d3;
+    height: 250px;
+    max-width: 800px;
   }
 
   .logo-card img {
-    max-width: 500px;
+    max-width: 300px;
+    max-height: 250px;
+    height: 250px;
+    width: 300px;
   }
 
   .cities {
@@ -373,11 +391,11 @@ ul li {
     display: flex;
     padding: 25px;
     background-color: #272a31;
+    height: 150px;
   }
 
   .creative {
     max-width: 400px;
-    filter: brightness(0) invert(1);
   }
 
   ul {
