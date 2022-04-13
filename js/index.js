@@ -71,7 +71,7 @@ for (let i = 0; i < speakers.length; i += 1) {
   img.classList.add('speaker');
   const divImg = document.createElement('div');
   divImg.classList.add('img-div');
-  divImg.appendChild(img); 
+  divImg.appendChild(img);
   divSpeakers.appendChild(divImg);
 
   const name = document.createElement('h4');

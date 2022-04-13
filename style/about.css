@@ -4,7 +4,7 @@
 }
 
 .full-nav {
-    display: none;
+  display: none;
 }
 
 .welcome {
@@ -122,7 +122,7 @@ main {
 }
 
 .text-2 {
-    display: none;
+  display: none;
 }
 
 .address {
@@ -192,6 +192,7 @@ main {
   flex-direction: column;
   gap: 15px;
 }
+
 .cities img {
   min-width: 200px;
   width: 100%;
@@ -238,14 +239,13 @@ ul li {
   font-size: 15px;
 }
 
-@media screen and (min-width: 768px){
-    
+@media screen and (min-width: 768px) {
   .hamburger {
     display: none;
   }
 
   nav {
-    box-shadow: rgb(0 0 0 / 45%) 0px 25px 20px -20px;
+    box-shadow: rgb(0 0 0 / 45%) 0 25px 20px -20px;
   }
 
   .nav-logo {
@@ -254,36 +254,45 @@ ul li {
   }
 
   .full-nav {
-      display: inline;
-      
+    display: inline;
   }
 
   .full-screen-nav {
-      display: flex;
-      justify-content: space-around;
-      background-color: #fff;
-      align-items: center;
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    align-items: center;
   }
+
   .links {
     width: 500px;
   }
 
+  ul {
+    list-style: none;
+  }
+
+  ul li {
+    font-size: 18px;
+    color: #fff;
+  }
+
   .links ul {
-      display: flex;
-      justify-content: space-between;
-      padding: 0;
-      margin: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
   }
 
   a {
-      text-decoration: none;
+    text-decoration: none;
   }
 
   .nav-links a {
-      color: #272a31;
-      font-family: "Lato", sans-serif;
-      font-weight: 800;
-      font-size: 14px;
+    color: #272a31;
+    font-family: "Lato", sans-serif;
+    font-weight: 800;
+    font-size: 14px;
   }
 
   .welcome {
@@ -299,8 +308,9 @@ ul li {
     color: #ec5242;
     max-width: 1200px;
   }
+
   .text-1 {
-      display: none;
+    display: none;
   }
 
   .about-line {
@@ -330,7 +340,7 @@ ul li {
   }
 
   .media-text {
-     display: inline;
+    display: inline;
   }
 
   .address {
@@ -354,7 +364,6 @@ ul li {
     margin: auto;
   }
 
-  
   .logo-text {
     text-align: center;
     font-size: 15px;
@@ -378,6 +387,7 @@ ul li {
     flex-direction: row;
     justify-content: center;
   }
+
   .cities img {
     min-width: 200px;
     width: 100%;
@@ -398,14 +408,5 @@ ul li {
 
   .creative {
     max-width: 400px;
-  }
-
-  ul {
-    list-style: none;
-  }
-
-  ul li {
-    font-size: 18px;
-    color: #fff;
   }
 }
