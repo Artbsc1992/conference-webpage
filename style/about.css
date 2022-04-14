@@ -46,7 +46,7 @@
   }
 
   .hamburger.active {
-    background-image: url("/img/x-menu.png");
+    background-image: url("../img/x-menu.png");
     background-size: contain;
     background-repeat: no-repeat;
     align-self: flex-end;
