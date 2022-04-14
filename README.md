@@ -33,6 +33,10 @@ The live demo [link](https://artbsc1992.github.io/conference-webpage/).
 - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
+## Acknowledgment:
+
+- Cindy Shin: [template](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
+
 
 ## Show your support
 

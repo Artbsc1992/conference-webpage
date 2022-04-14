@@ -4,6 +4,10 @@
   background-image: url('../img/main-background.png');
 }
 
+.top-bar {
+  display: none;
+}
+
 .full-nav {
   display: none;
 }
@@ -330,6 +334,27 @@ ul li {
 }
 
 @media screen and (min-width: 768px) {
+  .top-bar {
+    display: block;
+    background-color: #272a31;
+    height: 30px;
+  }
+  
+  .top-flex {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    gap: 50px;
+    max-width: 2400px;
+    padding-right: 50px;
+  }
+
+  .top-flex li a{
+    color: #fff;
+    font-size: 15px;
+  }
+
   .hamburger {
     display: none;
   }
