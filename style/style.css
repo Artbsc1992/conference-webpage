@@ -1,7 +1,7 @@
 .header {
   position: relative;
   top: 0%;
-  background-image: url(/img/main-background.png);
+  background-image: url('../img/main-background.png');
 }
 
 .full-nav {
