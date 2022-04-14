@@ -339,7 +339,7 @@ ul li {
     background-color: #272a31;
     height: 30px;
   }
-  
+
   .top-flex {
     display: flex;
     align-items: center;
@@ -350,7 +350,25 @@ ul li {
     padding-right: 50px;
   }
 
-  .top-flex li a{
+  a {
+    text-decoration: none;
+  }
+
+  .hole-program a {
+    color: #fff;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 20px;
+  }
+
+  .nav-links a {
+    color: #272a31;
+    font-family: "Lato", sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+  }
+
+  .top-flex li a {
     color: #fff;
     font-size: 15px;
   }
@@ -385,24 +403,6 @@ ul li {
     justify-content: space-between;
     padding: 0;
     margin: 0;
-  }
-
-  a {
-    text-decoration: none;
-  }
-
-  .hole-program a {
-    color: #fff;
-    text-align: center;
-    text-decoration: underline;
-    font-size: 20px;
-  }
-
-  .nav-links a {
-    color: #272a31;
-    font-family: "Lato", sans-serif;
-    font-weight: 800;
-    font-size: 14px;
   }
 
   .nav-links a:focus {
