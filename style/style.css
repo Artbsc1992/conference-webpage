@@ -275,7 +275,7 @@ main {
 .speakers-container .achiev {
   grid-area: achiev;
   align-self: center;
-  font-size: 9px;
+  font-size: 10px;
   max-width: 485px;
   margin-bottom: 10px;
 }
@@ -472,6 +472,15 @@ ul li {
 
   .speakers-container {
     max-width: 350px;
+  }
+
+  .speakers-container .img-div .speaker {
+    height: 150px;
+    width: 120px;
+  }
+
+  .speakers-container .achiev {
+    font-size: 12px;
   }
 
   .title-speakers {
